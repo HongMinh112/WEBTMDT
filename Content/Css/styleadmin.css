@@ -1,0 +1,101 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.left{
+    background-color: cornflowerblue;
+    width: 350px;
+    position: relative;
+}
+.catogery{
+    background-color: cornflowerblue;
+}
+
+.catogery_list div{
+    border-bottom: 0.3px solid grey;
+    height: 50px;
+    display: block;
+}
+.catogery_list a{
+    text-decoration: none;
+    display: inline-block;
+    font-size: 17px;
+    color: black;
+    margin-top: 5px;
+    margin-left: 30px;
+}
+.catogery_list div:hover{
+    background-color: grey;
+}
+.right{
+    background-color: rgb(197, 197, 197);
+    width: 1000px;
+    height: 130%;
+}
+.signin{
+    width: 300px;
+    height: 140px;
+    border: 0.2px solid grey;
+    margin: 50px 350px;
+    border-radius: 5px;
+    text-align: center;
+}
+.signin span{
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+.signin input{
+    margin: 5px 0;
+    border-radius: 4px;
+    font-size: 20px;
+}
+/* table */
+table{
+    border-collapse:collapse ;
+    width: 550px;
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+tr th{
+    border: 0.3px solid black;
+}
+tr td{
+    border: 0.3px solid black;
+}
+tr td a{
+    text-decoration: none;
+    
+}
+tr td a :hover{
+    color: green;
+}
+.catogery_manenger{
+    border: 0.2px solid grey;
+    border-radius: 5px;
+    text-align: center;
+    margin: 50px 120px;
+}
+.product{
+    margin: 50px 30px;
+}
+.angle-double-up{
+    position: fixed;
+    z-index: 400;
+    width: 60px;
+    height: 60px;
+    color: greenyellow;
+    bottom: 20px;
+    right: 25px;
+    border-radius: 25px;
+    border: 1px solid greenyellow;
+    display: block;
+}
+.angle-double-up p{
+    font-size: 25px;
+    display: inline-block;
+    margin: 16px 21px;
+    cursor: pointer;
+}

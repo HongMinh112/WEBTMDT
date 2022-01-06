@@ -1,0 +1,452 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+*::-webkit-scrollbar{
+    width: 10px;
+}
+.angle-double-up{
+    position: fixed;
+    z-index: 400;
+    width: 60px;
+    height: 60px;
+    color: greenyellow;
+    bottom: 20px;
+    right: 25px;
+    border-radius: 25px;
+    border: 1px solid greenyellow;
+    display: block;
+}
+.angle-double-up p{
+    font-size: 25px;
+    display: inline-block;
+    margin: 16px 21px;
+    cursor: pointer;
+}
+.header{
+    background-color:cornflowerblue;
+    margin-bottom: 20px;
+}
+.scroll{
+    z-index: 40;
+    position: fixed;
+    width: 100%;
+    animation: scroll 5s forwards;
+}
+.categorychild{
+    padding-top: 150px;
+    margin-bottom: 50px;
+}
+
+.header a{
+    text-decoration: none;
+}
+/* header top */
+.header_top{
+    display: flex;
+    justify-content: space-between;
+}
+.header_top a{
+    margin: 10px 12px;
+}
+.header_left{
+    display: flex;
+}
+.header_left a{
+    color: black;
+}
+.header_right{
+    display: flex;
+}
+.header_right a{
+    color: black;
+}
+/* bottom */
+.header_bottom{
+    display: flex;
+    z-index: 30;
+}
+.header_bottom-search{
+    margin-top:50px ;
+    margin-left: 70px;
+}
+.header_bottom-cart{
+    margin-top:60px ;
+    margin-left: 30px;
+}
+.header_bottom-cart a{
+    color: black;
+}
+.header_bottom-logo{
+    width: 130px;
+    height: 80px;
+    border: 1px solid black;
+    border-radius: 55%;
+    margin-left: 20px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    background-color: rgb(219, 219, 219);
+}
+.header_bottom-logo span{
+    display: inline-block;
+    font-size: 25px;
+   
+}
+/* page middle */
+.middle{
+    padding: 10px 10px;
+}
+.middle_top{
+    display: flex;
+}
+.button_click{
+    position: absolute;
+    top: 300px;
+    width: 680px;
+    margin-left: 11px;
+    display: flex;
+    justify-content: space-between;
+}
+.image_slide{
+    position: absolute;
+    top: 170px;
+    right: 0px;
+}
+.slide_block{
+    display: block;
+}
+.slide{
+    position: absolute;
+    width: 700px;
+    top: 170px;
+    left: 15px;
+    opacity: 0;
+    visibility: hidden;
+}
+.slide.active{
+    opacity: 1;
+    visibility: visible;
+ }
+ .bien-mat-ben-trai{
+    animation: bien-mat-ben-trai 1s forwards;
+ }
+ @keyframes bien-mat-ben-trai{
+    from{
+       transform: translateX(0%);
+    }
+    to{
+       transform: translateX(-80%);
+    }
+ }
+ .di-vao-ben-phai{
+    animation: di-vao-ben-phai 1s forwards;
+ }
+ @keyframes di-vao-ben-phai{
+    from{
+       transform: translateX(80%);
+    }
+    to{
+       transform: translateX(0%);
+    }
+ }
+ /*xử lý nút prev*/
+ .bien-mat-ben-phai{
+    animation: bien-mat-ben-phai 1s forwards;
+ }
+ @keyframes bien-mat-ben-phai{
+    from{
+       transform: translateX(0%);
+    }
+    to{
+       transform: translateX(80%);
+    }
+ }
+ .di-vao-ben-trai{
+    animation: di-vao-ben-trai 1s forwards;
+ }
+ @keyframes di-vao-ben-trai{
+    from{
+       transform: translateX(-100%);
+    }
+    to{
+       transform: translateX(0%);
+    }
+ }
+ 
+/* danh mục */
+.category{
+    display: flex;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    margin-top: 300px;
+}
+.category_a{
+    text-decoration: none;
+    color: black;
+    margin: 30px 20px;
+    text-align: center;
+
+}
+.category_a:hover{
+    box-shadow: 0px 0px 24px 0px rgba(197, 6, 6, 0.6);
+}
+.category span{
+    display: inline-block;
+    margin-bottom: -30px;
+}
+/* sanr pham */
+.product_new{
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    width: 100%;
+}
+.product_block{
+    margin-top: 20px;
+}
+.product_list{
+    text-align: center;
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+}
+.product_paradigm-right{
+    text-align: center;
+    display: flex;
+   
+}
+.slide-block{
+    opacity: 1;
+    visibility:visible ;
+}
+.product_list-item{
+    display: block;
+    background-color: rgb(255, 255, 255);
+    width: 230px;
+    height: 350px;
+    margin: 10px 30px;
+    border-radius: 5px;
+    cursor: pointer;
+    position: relative;
+    left: 20px;
+}
+.product_list-item a{
+    text-decoration: none;
+    color: black;
+}
+.product_list-item img{
+    margin: 10px 0;
+    width: 210px;
+    height: 200px;
+    margin-left: 10px;
+}
+.slidecatogery{
+    display: flex;
+    width: 890px;
+    height: 735px;
+    flex-wrap: wrap;
+    overflow-x: scroll;
+
+}
+.product_list-item--sale{
+    position: absolute;
+    z-index: 30;
+    background-color: white;
+    color: black;
+    width: 40px;
+    height: 40px;
+    border: 0.5px solid black;
+    border-radius: 50%;
+    margin-top: 14px;
+    margin-left: 10px;
+}
+.product_list-content{
+    margin: 5px 0;
+}
+.product_list-item:hover{
+    display: block;
+    box-shadow: 0px 0px 24px 0px rgba(197, 6, 6, 0.6);
+}
+/* product mô hình */
+.product_paradigm{
+    display: flex;
+    background-color: rgb(240, 240, 240);
+    border-radius: 5px;
+    margin: 10px 10px;
+    
+}
+.product_paradigm-item{
+    position: relative;
+    margin-left: 10px;
+    right: 0;
+    margin-right: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    z-index: 400;
+    text-align: center;
+}
+.product_paradigm-item--title{
+    font-size: 20px;
+    background-color: greenyellow;
+    width: 300px;
+    height: 40px;
+    font-weight: bold;
+}
+/* cart */
+table{
+    border-collapse: collapse;
+}
+tr th{
+    border: 0.5px solid black;
+}
+tr td{
+    border: 0.5px solid black;
+}
+/* footer */
+.footer{
+    display: inline-block;
+    border-radius: 5px;
+    margin: 0 10px;
+    background-color: cadetblue;
+}
+.footer_block{
+    margin: 10px 30px;
+}
+.footer_block span{
+    font-size: 25px;
+    font-weight: bold;
+}
+.footer_block a{
+    text-decoration: none;
+    color: black;
+}
+/* member */
+.form_member{
+    background-color: rgb(240, 240, 240);
+    width: 400px;
+    border: 1px solid black;
+    border-radius: 10px;
+    margin: 20px 150px;
+    text-align: center;
+}
+.form_member span{
+    margin-top: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.form_member input{
+    margin-top: 15px;
+    border-radius: 10px;
+    font-size: 15px;
+}
+/* gopy */
+.pageNews{
+    position: absolute;
+    z-index: 0;
+    width: 100%;
+    height: 160%;
+    background-color: white;
+    top: 430px;
+    display: flex;
+}
+.pageNews_left-block{
+    display: flex;
+}
+.pageNews_left-list{
+    width: 400px;
+    margin: 20px 30px;background-color: rgba(235, 235, 235, 0.3);
+}
+.pageNews_left-list img{
+    width: 400px;
+    height: 200px;
+}
+.pageNews_right-block{
+    position: absolute;
+    top: 60px;
+    background-color: rgba(105, 105, 105, 0.3);
+    width: 330px;
+    margin-bottom: 10px;
+}
+.content_facebook{
+    width: 330px;
+    height: 689px;
+    overflow: scroll;
+    border: 1px solid black;
+}
+
+/* contact */
+.contact{
+    background-color: white;
+    width: 100%;
+    height: 1000px;
+}
+.contact_block{
+    display: flex;
+}
+.block{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 50px;
+}
+.content{
+    text-align: center;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+.contact_block-item{
+    background-color: rgba(216, 214, 214, 0.3);
+    margin: 90px 55px;
+    width: 300px;
+    height: 280px;
+}
+.contact_block-item:hover{
+    background-color: white;
+    display: block;
+    box-shadow: 0px 0px 24px 0px rgb(0 0 0 / 60%);
+}
+.contact_information-input{
+    width: 100%;
+}
+.contact_information-input input{
+    border: 0px;
+    background-color: rgb(236, 236, 236);
+    width: 358px;
+    height: 40px;
+    margin: 0 30px;
+}
+.contact_information-content textarea{
+    width: 95%;
+    height: 350px;
+    border: 0px;
+    background-color: rgb(236, 236, 236);
+    margin: 15px 30px;
+}
+.contact_information-button{
+    text-align: center;
+}
+.contact_information-button button{
+    width: 120px;
+    height: 40px;
+    border: 0;
+    border-radius: 20px;
+    background-color: greenyellow;
+}
+.list{
+    border-collapse: collapse;
+    text-align: center;
+}
+.list tr th{
+    margin: 0 15px;
+    border: 0.5px solid black;
+}
+.list tr td{
+    border: 0.5px solid black;
+}
+.list tr td a{
+    background-color: yellowgreen;
+    margin-bottom: 12px;
+    margin-left: 10px;
+    display: inline-block;
+    border-radius: 10px;
+    color: white;
+}
